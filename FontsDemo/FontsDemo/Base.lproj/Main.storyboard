@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NLr-D1-0FA">
+                                <rect key="frame" x="16" y="20" width="568" height="332"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">iOS 10，一个十分重大的 iOS 版本。现在，你所爱的在 iOS 10 上都有了更出色的表现。你可以在信息中用大胆新颖的方式表达自我，在重新设计的精美地图里寻找路线，在照片中以不同以往的方式唤起美好回忆，还可在更多 app 中体验 Siri 的强大功能。iOS 10 的精彩数不胜数，下面是其中一些亮点，让我们先睹为快。  想说的，亲手写。 用亲手书写的方式发送信息。你的好友会看到宛如墨迹在纸面上流动的动画效果。  把你的话，说得更传神。 给信息气泡来点新鲜感。无论你是自豪地说，大声地喊，还是轻声细语，表达起来都更加生动传神。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2x-db-lhd">
+                                <rect key="frame" x="20" y="456" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.11011026140000001" green="0.60464310710000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pme-Cf-vIV"/>
+                                </constraints>
+                                <state key="normal" title="汉仪跳跳体">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Too-Oy-Jnu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaB-Nf-nG4">
+                                <rect key="frame" x="20" y="408" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.11011026140000001" green="0.60464310710000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WVu-Q7-CzW"/>
+                                </constraints>
+                                <state key="normal" title="FZM字体">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHl-yc-WHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-MA-7KN">
+                                <rect key="frame" x="20" y="360" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.11011026140000001" green="0.60464310710000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rdb-B7-Rhz"/>
+                                </constraints>
+                                <state key="normal" title="方正少儿字体">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5WV-Yc-q8v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwX-Mq-7Az">
+                                <rect key="frame" x="20" y="504" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.11011026135342095" green="0.6046431070624072" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OrH-TP-bmu"/>
+                                </constraints>
+                                <state key="normal" title="迷你简丫丫字体">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWP-2d-pg8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qS-Wd-EKB">
+                                <rect key="frame" x="20" y="552" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.11011026140000001" green="0.60464310710000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T4p-Wy-Lba"/>
+                                </constraints>
+                                <state key="normal" title="系统字体">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hti-HG-86d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3qS-Wd-EKB" secondAttribute="trailing" constant="20" id="4eK-ZU-puw"/>
+                            <constraint firstItem="gwX-Mq-7Az" firstAttribute="top" secondItem="P2x-db-lhd" secondAttribute="bottom" constant="8" id="EPB-rV-FyL"/>
+                            <constraint firstItem="P2x-db-lhd" firstAttribute="top" secondItem="SaB-Nf-nG4" secondAttribute="bottom" constant="8" id="Fxc-gQ-NqQ"/>
+                            <constraint firstAttribute="trailing" secondItem="SaB-Nf-nG4" secondAttribute="trailing" constant="20" id="L7q-Bx-GJx"/>
+                            <constraint firstAttribute="trailing" secondItem="6F1-MA-7KN" secondAttribute="trailing" constant="20" id="Pig-IU-QIA"/>
+                            <constraint firstItem="NLr-D1-0FA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="PmH-EK-O5f"/>
+                            <constraint firstItem="3qS-Wd-EKB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="WSN-HD-IuM"/>
+                            <constraint firstAttribute="trailing" secondItem="gwX-Mq-7Az" secondAttribute="trailing" constant="20" id="asw-rS-qxb"/>
+                            <constraint firstItem="6F1-MA-7KN" firstAttribute="top" secondItem="NLr-D1-0FA" secondAttribute="bottom" constant="8" id="bOm-nr-9R0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3qS-Wd-EKB" secondAttribute="bottom" constant="8" id="bkW-OH-JHc"/>
+                            <constraint firstAttribute="trailing" secondItem="NLr-D1-0FA" secondAttribute="trailing" constant="16" id="elp-3H-l2Y"/>
+                            <constraint firstItem="NLr-D1-0FA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gO5-WP-r5K"/>
+                            <constraint firstItem="SaB-Nf-nG4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="grm-YH-idD"/>
+                            <constraint firstItem="6F1-MA-7KN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jUO-dQ-WbR"/>
+                            <constraint firstItem="gwX-Mq-7Az" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jlY-pD-bDz"/>
+                            <constraint firstItem="SaB-Nf-nG4" firstAttribute="top" secondItem="6F1-MA-7KN" secondAttribute="bottom" constant="8" id="lO7-oy-9M3"/>
+                            <constraint firstItem="P2x-db-lhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="oKZ-Vr-YUn"/>
+                            <constraint firstItem="3qS-Wd-EKB" firstAttribute="top" secondItem="gwX-Mq-7Az" secondAttribute="bottom" constant="8" id="uuC-6b-0yU"/>
+                            <constraint firstAttribute="trailing" secondItem="P2x-db-lhd" secondAttribute="trailing" constant="20" id="w8J-An-wBx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="NLr-D1-0FA" id="SkW-Ni-yL5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="490"/>
+        </scene>
+    </scenes>
+</document>

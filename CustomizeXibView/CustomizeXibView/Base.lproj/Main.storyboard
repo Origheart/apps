@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomizeXibView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dc-aH-AMd" customClass="WeiboHeader" customModule="CustomizeXibView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="210"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="zrL-YF-0VK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="background" value="bg"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="avatar" value="avatar_female"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="叶一茜"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gender" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10493609474626175" green="1" blue="0.42890336669730733" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Dc-aH-AMd" secondAttribute="trailing" id="6vM-GB-U8f"/>
+                            <constraint firstItem="8Dc-aH-AMd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HA3-2j-5qv"/>
+                            <constraint firstItem="8Dc-aH-AMd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="a1V-Kv-9fW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="338"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar_female" width="180" height="180"/>
+        <image name="bg" width="640" height="640"/>
+    </resources>
+</document>

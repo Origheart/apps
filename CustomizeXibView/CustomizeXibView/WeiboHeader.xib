@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeiboHeader" customModule="CustomizeXibView" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="XBr-Yg-kPS" id="8Y6-pv-U0o"/>
+                <outlet property="backgroundImageView" destination="Zly-hE-XTO" id="xkJ-rb-G8S"/>
+                <outlet property="descLabel" destination="fhH-HU-xyO" id="uJl-Nt-CDO"/>
+                <outlet property="fansNumLabel" destination="oPI-6M-A17" id="udt-xd-R1u"/>
+                <outlet property="followNumLabel" destination="NSe-m8-MPO" id="HcZ-vD-YDu"/>
+                <outlet property="genderIcon" destination="CI0-0R-Qqo" id="WA6-Vx-utV"/>
+                <outlet property="nameLabel" destination="eAy-aZ-ywj" id="lyC-7b-ez2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Zly-hE-XTO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_female" translatesAutoresizingMaskIntoConstraints="NO" id="XBr-Yg-kPS">
+                    <rect key="frame" x="120" y="40" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="jph-4H-hfY"/>
+                        <constraint firstAttribute="height" constant="80" id="nbt-Ix-91C">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="40"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="叶一茜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAy-aZ-ywj">
+                    <rect key="frame" x="135" y="128" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userinfo_icon_female" translatesAutoresizingMaskIntoConstraints="NO" id="CI0-0R-Qqo">
+                    <rect key="frame" x="194" y="131" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="Y7c-Tq-3XT"/>
+                        <constraint firstAttribute="height" constant="16" id="y4e-iK-Lkb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注 525" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-m8-MPO">
+                    <rect key="frame" x="79" y="154" width="61" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝 400万" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPI-6M-A17">
+                    <rect key="frame" x="171.5" y="154" width="77" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介：女歌手、明星。大众喜爱的歌手" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhH-HU-xyO">
+                    <rect key="frame" x="8" y="180" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="f63-3W-Ojw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fhH-HU-xyO" firstAttribute="top" secondItem="oPI-6M-A17" secondAttribute="bottom" constant="8" id="1H3-57-BDD"/>
+                <constraint firstItem="CI0-0R-Qqo" firstAttribute="leading" secondItem="eAy-aZ-ywj" secondAttribute="trailing" constant="8" id="AEH-6n-JJs"/>
+                <constraint firstItem="fhH-HU-xyO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="BOo-eF-kVF"/>
+                <constraint firstItem="XBr-Yg-kPS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="E9v-2E-K5A"/>
+                <constraint firstItem="XBr-Yg-kPS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="H4z-BD-Z3p"/>
+                <constraint firstAttribute="bottom" secondItem="Zly-hE-XTO" secondAttribute="bottom" id="OtY-FW-z8X"/>
+                <constraint firstItem="Zly-hE-XTO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RAi-3L-D3K"/>
+                <constraint firstItem="oPI-6M-A17" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="50" id="Tjk-0U-FhI"/>
+                <constraint firstItem="NSe-m8-MPO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-50" id="Wvr-Jx-lgG"/>
+                <constraint firstItem="eAy-aZ-ywj" firstAttribute="top" secondItem="XBr-Yg-kPS" secondAttribute="bottom" constant="8" id="cUJ-wQ-rd4"/>
+                <constraint firstItem="NSe-m8-MPO" firstAttribute="top" secondItem="XBr-Yg-kPS" secondAttribute="bottom" constant="34" id="peV-dh-7kw"/>
+                <constraint firstAttribute="trailing" secondItem="Zly-hE-XTO" secondAttribute="trailing" id="pgi-a2-0v8"/>
+                <constraint firstItem="Zly-hE-XTO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rCa-cE-SyZ"/>
+                <constraint firstItem="oPI-6M-A17" firstAttribute="centerY" secondItem="NSe-m8-MPO" secondAttribute="centerY" id="rfa-1j-mXq"/>
+                <constraint firstItem="eAy-aZ-ywj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vT6-p7-7oR"/>
+                <constraint firstAttribute="trailing" secondItem="fhH-HU-xyO" secondAttribute="trailing" constant="8" id="vbv-pJ-Km7"/>
+                <constraint firstItem="CI0-0R-Qqo" firstAttribute="centerY" secondItem="eAy-aZ-ywj" secondAttribute="centerY" id="yeC-UU-jUW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="280" y="312.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_female" width="180" height="180"/>
+        <image name="bg" width="640" height="640"/>
+        <image name="userinfo_icon_female" width="16" height="16"/>
+    </resources>
+</document>

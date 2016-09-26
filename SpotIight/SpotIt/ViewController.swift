@@ -108,11 +108,11 @@ extension ViewController {
             let searchableItem = CSSearchableItem(uniqueIdentifier: "com.appcoda.SpotIt.\(i)", domainIdentifier: "movies", attributeSet: searchableItemAttributeSet)
             searchableItems.append(searchableItem)
             
-            // 使用 Core Spotlight API 索引这些项目
-            CSSearchableIndex.defaultSearchableIndex().indexSearchableItems(searchableItems) { (error) -> Void in
-                if error != nil {
-                    print(error?.localizedDescription)
-                }
+        }
+        // 使用 Core Spotlight API 索引这些项目
+        CSSearchableIndex.defaultSearchableIndex().indexSearchableItems(searchableItems) { (error) -> Void in
+            if error != nil {
+                print(error?.localizedDescription)
             }
         }
     }

@@ -1,0 +1,10 @@
+framework module ImageProcessor {
+  umbrella header "ImageProcessor.h"
+
+  export *
+  module * { export * }
+}
+
+module ImageProcessor.Swift {
+    header "ImageProcessor-Swift.h"
+}

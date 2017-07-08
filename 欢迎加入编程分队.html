@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no"/>
+<link href="css/template08.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" id="headscript">
+window.onload=function(){
+	var body =	document.querySelectorAll("body")[0];
+	var content = document.createElement('div');
+		content.className = 'container';
+		content.innerHTML = body.innerHTML;
+		body.innerHTML = '';
+		body.appendChild(content);
+		document.querySelector("#headscript").remove();
+}
+</script>
+<style>
+    @charset "utf-8";
+/*base*/
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;-ms-touch-action:none;margin:0;padding:0;height:100%;}
+body{-webkit-overflow-scrolling:touch;-webkit-font-smoothing:antialiased;min-width:320px;font-size:62.5%;margin:0;text-align:center;word-break:break-word;}
+div,ul,ol,li,dl,dt,dd,h1,h2,h3,h6,p,b,i,a,header,mark,sup,sub,hr,br,video,audio,blockquote,time,figure,figcaption,img,footer,address,pre,code{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+A,A:link,A:visited,A:active{color:#3a7bf7;-webkit-touch-callout:none;text-decoration:none;outline:none;cursor:pointer;}
+A:hover{color:#5991fa;}
+figure{padding:20px 0px 0px 0px;}
+img,p,figure,h2,h3,pre,pre code{display:block;overflow:hidden;}
+img{border:0;margin:0px;}
+p + p{padding-top:0px;}
+h1,h2,h3,h6,b{font-weight:normal;}
+/*font*/
+body{font-family:'SourceHanSansCN-Regular';max-width:100%;padding:0px 0px 20px 0px;color:#404040;background:#fff;}
+h1,h2,h3,blockquote{font-family:'FZYANS_JW--GB1-0';}
+b{font-family:'SourceHanSansCN-Bold';}
+figcaption{font-family:'SourceHanSansCN-Light'}
+/*文本两端对齐*/
+p{/*text-align:justify;text-justify:inter-word;*/text-align:left;}
+/*page左右边距*/
+p,h2,h3,ul,ol,figure{margin:0px 28px;}
+/*title*/
+h1{color:#252525;font-size:3.6em;line-height:42px;padding:35px 52px 34px 52px;margin:0px;}
+h1:after,address{content:'';width:115px;height:1px;border-top:#f27242 5px solid;display:block;overflow:hidden;}
+h1:after{margin:38px auto 0px auto;}
+h2{font-size:2.4em;line-height:32px;text-align:left;padding:40px 0px 0px 0px;color:#252525;}
+h3{text-align:left;font-size:1.7em;line-height:1em;color:#333;padding:20px 0px 0px 0px;}
+/*正文|图片|图片描述*/
+p{padding:10px 0px;font-size:1.5em;line-height:26px;}
+/*p a{border-bottom:#404040 1px solid;}*/
+figure img{max-width:100%;padding:0px 0px 20px 0px;margin:0px auto;}
+figcaption{display:block;color:#252525;padding:0px 0px 20px 0px;line-height:27px;font-size:1.2em;letter-spacing:1px;text-align:right;text-indent:68px;}
+/*头图*/
+header{margin:0px auto;width:100%;background-repeat:no-repeat;background-position:center center;background-size:cover;}
+header img{width:100%;padding:0;}
+address{margin:40px auto 0px auto;padding-bottom:20px;}
+/*导语引用*/
+blockquote{position:relative;padding:23px 52px 20px 52px;margin:0px auto;font-size:1.5em;color:#9f9f9f;line-height:26px;display:block;}
+blockquote:before{background-image:url('../images/template08/quotation_marks_left.png');}
+blockquote:after{background-image:url('../images/template08/quotation_marks_right.png');}
+blockquote:before,blockquote:after{content:'';width:15px;height:11px;position:absolute;margin:0px;overflow:hidden;background-position:left top;background-size:15px 11px;background-repeat:no-repeat;}
+blockquote:before{left:27px;top:23px;}
+blockquote:after{right:27px;bottom:20px;}
+/*无序有序列表*/
+ol,ul{text-align:left;line-height:26px;font-size:1.5em;position:relative;list-style-type:none;}
+ul li:before{background:#f99f75;content:'';width:6px;height:6px;border-radius:6px;overflow:hidden;position:absolute;left:0px;margin-top:9px;}
+ul li,ol li{padding:8px 0px;}
+ul{padding:20px 0px 20px 16px;}
+ol{counter-reset:sectioncounter;padding:20px 0px 20px 20px;}
+ol li:before{content:counter(sectioncounter) ".";counter-increment:sectioncounter;color:#f99F75;position:absolute;left:0px;}
+/*分割线*/
+hr{height:1px;overflow:hidden;border:none;background:#e1e1e1;margin:40px 28px;}
+
+/*code*/
+pre{margin:20px 28px;padding:10px;display: block; background-color: #fafafa; border: 1px solid hsl(0, 0%, 90%); border-radius: 5px; overflow: hidden;text-align: left;}
+code{text-align: left; background-color: transparent !important; white-space: pre-wrap; font: normal 14px Consolas, Monaco, monospace;}
+p code{background-color: #fafafa !important;border: 1px solid hsl(0, 0%, 90%);border-radius: 5px !important;white-space: normal !important;padding: 0px 5px;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center;}
+/*pc|ipad*/
+@media only screen and (min-width:770px){
+    body{background:#5E6673;background:-webkit-gradient(linear, 0 0, 0 top, from(rgba(140, 149, 160, 1)), to(rgba(91, 102, 115, 1)));}
+    p,h1,h2,h3,ul,ol,figure,hr,.footbar,pre{margin-left:auto;margin-right:auto;max-width:664px;}
+    p,h1,h2,h3,ul,ol,figure,pre{margin:0px 74px;}
+    h1{padding-left:0px;padding-right:0px;}
+    blockquote{max-width:656px;}
+    .container {margin:50px auto;background:#fff;padding-bottom:50px;box-shadow: 0px 1px 2px 0px rgba(27,29,32,.5),0px 10px 12px 0px rgba(27,29,32,.25),0px 20px 30px 0px rgba(27,29,32,.15),0px 0px 50px 0px rgba(27,29,32,.2);max-width: 750px;
+        }
+    .footbar{max-width:603px;}
+}
+/*2016年5月24日22:26:16*/
+</style>
+<title>欢迎</title>
+</head>
+<body>
+<header><img src="http://oaclergq7.bkt.clouddn.com/maccoding1.jpeg"></header>
+<h1>欢迎</h1>
+<p>或许，你是在笑来老师的反复强调学会编程的重要性而来的；</p>
+<p>或许，你是在看到战友们的留言后，看到很多人都在学习编程，你想要习得一种编程技艺而来的；</p>
+<p>或许，你是对程序的世界感到好奇而来的；</p>
+<p>或许，你是想做出自己的软件产品而来的；</p>
+<p>或许，你是想知道程序员的世界是怎样一回事而来的；</p>
+<p>……</p>
+<p>无论是何种缘由，你来了！我很欢迎~</p>
+<p>那么你来了之后要做些什么呢？请大家按照自己的需求，各取所需喔。</p>
+<h2>Geek学习圈</h2>
+<figure><img src="http://oaclergq7.bkt.clouddn.com/uidesign1.jpeg"></figure>
+<p>加入此圈子不要求你有什么编程基础，但是要求你有一颗进取的心。</p>
+<p>在这个圈子里，我们每天更新一个概念、一个知识点、一个小思路。对，每天！持续更新下去！干货永久收藏！将时间维度拉长，复利效应终将产生。</p>
+<p>持续学习，你将收获如下：</p>
+<ul>
+<li>学会互联网思维、培养极客精神；</li>
+<li>锻炼我们的抽象思维能力和逻辑思维能力；</li>
+<li>学会通过编程处理大量重复性、低效率的工作，从而节省时间；</li>
+<li>学会开发自己的App，发布自己的App到应用市场，赚取财富；</li>
+<li>学会编程语言：Swift、Python、JavaScript、HTML、CSS等；</li>
+<li>寻找设计的感觉，做一个有审美品位的人；</li>
+<li>学会寻找需求，学会营销，为创造价值储蓄能量，做一个有用的人。</li></ul>
+<h3>加入方式：</h3>
+<p>扫一扫，然后仔细阅读简介，采用李笑来关于选择方法论做出选择是否加入：</p>
+<figure><img src="http://oaclergq7.bkt.clouddn.com/ioserxiaomiquan1.jpeg"></figure>
+<h2>如何访问Google</h2>
+<figure><img src="http://oaclergq7.bkt.clouddn.com/googlesearch1.jpeg"></figure>
+<p>相信很多童鞋逐渐明白使用Google的好处了。但是对于小白，这是一道门槛，跨过去需要费些力气。关于这个技能，这里有你想知道的一切。</p>
+<h3>我们谈谈“科学上网”</h3>
+<p> </p>
+<p>在聊“科学上网”之前，我们先说说一个概念：VPN。</p>
+<blockquote>在公用网络上建立专用网络，进行加密通讯。</blockquote>
+<p>从这个概念看，VPN属于远程访问技术，例如某公司员工出差到外地，他想访问企业内网的服务器资源，这种访问就属于远程访问。</p>
+<p>比方说就是你在国内，好多国外的网站被ZF的防火墙屏蔽了，你又非要访问，就只能“翻墙”过去，俗称也就是科学上网。</p>
+<p>这个功能对于我们热爱学习的人来说尤其重要，因为很多资源都是在国外的服务器上才有的。可以这么说，学会了科学上网，你将打开一扇通往另一个世界的大门。</p>
+<h3><a href="http://7xjt4p.com1.z0.glb.clouddn.com/%E6%88%91%E4%BB%AC%E8%B0%88%E8%B0%88%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.pdf">点击这里下载课件，继续学习科学上网的方法</a></h3>
+<p> </p>
+<h3>教你如何使用Google搜索</h3>
+<p> </p>
+<p>虽然大家昨天知道了如何访问Google，但是大家会真正的高效使用Google搜索吗？</p>
+<ul>
+<li>谷歌拥有全世界最大的检索网页量，强大的图片搜索，新闻搜索，还有文件搜索的功能</li>
+<li>了解搜索的规则，谷歌会自动忽略很多频率很高的词汇 www , i 以及部分符号，对大小写也不敏感</li>
+<li>熟悉掌握搜索高级语法，比如与，或，非，在谷歌里面的对应的符号是 " "，"OR"，"-", 会提升搜索的准确性</li>
+</ul>
+<h3><a href="http://7xjt4p.com1.z0.glb.clouddn.com/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Google%E6%90%9C%E7%B4%A2.pdf">下面给大家介绍几种常用的搜索技巧，点击这里获取干货，继续学习</a></h3>
+<p> </p>
+<p> </p>
+<p>PS：需要工具，或者账号的朋友可以私聊我</p>
+
+<h2>学习什么编程语言</h2>
+<p>我们要给自己做个“武器库”，然后不断往里面添加各种必要的武器，这就是我们开疆拓土的“本钱”。在编程领域，“讨论哪一种编程语言更好”，就是一个典型的“注意力浪费大坑” —— 有那时间还不如直接多学好几个编程语言呢！更何况，学会一个之后再学另外一个，事实上很简单！——李笑来</p>
+<p> </p>
+<p>我们先看一下编程语言的定义：</p>
+
+<p>编程语言（programming language），是用来定义计算机程序的形式语言。它是一种被标准化的交流技巧，用来向计算机发出指令。一种计算机语言让程序员能够准确地定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。</p>
+
+<p>我们今天更新的概念就是编程语言。最开始需要要明白一个理论：人对概念的理解决定了人的行为，概念越清晰做的决定越准确，懂得的概念越多人就越聪明。这个理论不是我提的，而是李笑来说的。😄其实学习编程没那么难，不是需要非常高的天赋才学的会。我们只需要每天学习或者更新一个准确的概念就可以了，时间越长会越觉得有趣，也会更享受这种状态。当然，每天学习一点编程也会产生复利效应的喔！</p>
+
+<p>看了上面对编程语言的定义，不知道大家能不能有一个清晰的认识。所谓的语言，就是与人交流沟通的工具嘛，比如中文、英语、韩语等；所谓的编程语言，就是与计算机交流沟通的工具嘛。明白了这一点就明白了编程语言其实也是有语法的，不同的语言写法也是不一样，和不同的计算机沟通使用的语言也不一样。我们学习编程语言的过程，就是要从这些语法、“发音”开始学起。</p>
+<h3><a href="http://7xjt4p.com1.z0.glb.clouddn.com/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E4%BB%8B%E7%BB%8D.pdf">点击这里下载课件，继续了解编程语言</a></h3>
+
+<h2>零基础如何开始编程</h2>
+<p>虽然是万事开头难，但是任何行动都比没有行动好。从现在开始，让我们行动起来吧！这一份行动指南，从一开始就让大家通过很Geek的方式走在iOSer成长之路，让大家有一个全局观。个人并不喜欢其他的“从0开始学xxx”的教程，它们总是告诉你第一步该做什么，第二步该做什么，这种教程不是不好，而是让我们没有一种大局观，不知道我们每天做的事情、学的东西能有什么用。而对于我来说，学会任何一种技能，首先需要了解全局，先学会学习，再去学习，然后就是：直接用起来！</p>
+
+<p>这里我将开始行动分为两个部分：软技能和硬技能。在大多数时候……</p>
+<h3><a href="http://7xjt4p.com1.z0.glb.clouddn.com/%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B.pdf">点击这里下载课件，继续阅读《如何开始》</a></h3>
+
+<h2>问题讨论</h2>
+<p>我为大家创建了一个开发者学习讨论的微信群，平时探讨各种编程、技术、设计、运营相关的问题。如果想要共同学习的同学，可以私信我邀请加入喔！</p>
+
+<address>    </address>
+</body>
+</html>
